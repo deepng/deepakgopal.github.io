@@ -1,9 +1,7 @@
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import Image from "next/image";
 import LinkedInProfile from "@/components/view-source";
 import Link from "next/link";
-import { link } from "fs";
+
 
 export default function Page() {
   return (
@@ -122,7 +120,7 @@ export default function Page() {
         <div className="flex flex-col md:flex-row gap-8">
           <div className="flex-1">
             <p className="mb-4">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+              I am always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
             </p>
             <div className="space-y-2">
               <div className="flex items-center gap-2">
