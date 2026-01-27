@@ -15,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Deepak Gopal - Personal Website",
+  title: "Deepak Gopal - Profile & Portfolio",
   description: "Professional profile and portfolio of Deepak Gopal",
+  icons: {
+    icon: "/LinkedInProfile.png",
+  },
 };
 
 export default function RootLayout({
@@ -26,6 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/images/LinkedInProfile.png" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

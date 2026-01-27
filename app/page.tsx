@@ -1,5 +1,9 @@
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import Image from "next/image";
+import LinkedInProfile from "@/components/view-source";
 import Link from "next/link";
+import { link } from "fs";
 
 export default function Page() {
   return (
@@ -8,10 +12,10 @@ export default function Page() {
       <section className="flex flex-col-reverse md:flex-row items-center gap-8 py-8">
         <div className="flex-1">
           <h1 className="text-4xl font-bold mb-4">Deepak Gopal</h1>
-          <h2 className="text-2xl text-zinc-700 dark:text-zinc-300 mb-6">Technology Enthusiast</h2>
+          <h2 className="text-2xl text-zinc-700 dark:text-zinc-300 mb-6">Building software products, teams and values</h2>
           <p className="text-lg mb-6">
             Welcome to my personal website. I&apos;m passionate about building elegant solutions to complex problems.
-            This site showcases my projects, skills, and thoughts on technology.
+            This site showcases my projects, skills, and thoughts.
           </p>
           <div className="flex gap-4">
             <Link
@@ -30,9 +34,16 @@ export default function Page() {
         </div>
         <div className="w-48 h-48 md:w-64 md:h-64 relative rounded-full overflow-hidden border-4 border-zinc-200 dark:border-zinc-700">
           {/* Replace with your profile image */}
-          <div className="w-full h-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center text-white text-4xl">
+          <Image
+            src={LinkedInProfile()}
+            alt="Deepak Gopal"
+            fill
+            style={{ objectFit: "cover" }}
+            priority
+          />
+          {/* <div className="w-full h-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center text-white text-4xl">
             DG
-          </div>
+          </div> */}
         </div>
       </section>
 
