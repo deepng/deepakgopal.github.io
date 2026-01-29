@@ -57,6 +57,8 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
+          GITHUB_ACTIONS: true
+          GITHUB_REPOSITORY: ${{ github.repository }}
           
       - name: Copy GitHub Pages files to output
         run: |

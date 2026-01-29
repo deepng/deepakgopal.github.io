@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Deepak Gopal - Profile & Portfolio",
   description: "Professional profile and portfolio of Deepak Gopal",
   icons: {
-    icon: "/LinkedInProfile.png",
+    icon: "./images/LinkedInProfile.png",
   },
 };
 
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/images/LinkedInProfile.png" />
+      <link rel="icon" href="./images/LinkedInProfile.png" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
