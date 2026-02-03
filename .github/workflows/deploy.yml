@@ -6,13 +6,13 @@ on:
     paths-ignore:
       - '**.md'
       - '.gitignore'
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Environment to deploy to'
-        type: environment
-        required: false
-        default: 'github-pages'
+  # workflow_dispatch:
+  #   inputs:
+  #     environment:
+  #       description: 'Environment to deploy to'
+  #       type: environment
+  #       required: true
+  #       default: 'github-pages'
 
 permissions:
   contents: read
