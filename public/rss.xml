@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Deepak Gopal's Blog</title>
+  <link>https://deepakgopal.github.io/blog</link>
+  <description>Thoughts, insights, and experiences from my journey in technology leadership</description>
+  <language>en</language>
+  <lastBuildDate>Thu, 05 Feb 2026 14:57:55 GMT</lastBuildDate>
+  <atom:link href="https://deepakgopal.github.io/rss.xml" rel="self" type="application/rss+xml" />
+  <!-- Blog posts will appear here when added -->
+</channel>
+</rss>
