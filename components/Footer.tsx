@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <h2 className="text-xl font-bold mb-2">Deepak Gopal</h2>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Software Developer & Technology Enthusiast
+              Technology Enthusiast & Aspiring Entrepreneur 
             </p>
           </div>
           
@@ -41,7 +41,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <a 
-                    href="https://github.com/deepakgopal" 
+                    href="https://github.com/deepng" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400"
@@ -51,7 +51,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a 
-                    href="#" 
+                    href="https://www.linkedin.com/in/dgopal/" 
                     className="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400"
                   >
                     LinkedIn
@@ -59,7 +59,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a 
-                    href="#" 
+                    href="https://x.com/deengg" 
                     className="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400"
                   >
                     Twitter
