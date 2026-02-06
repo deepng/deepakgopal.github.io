@@ -1,7 +1,9 @@
 export default function LinkedInProfile() {
-    return "./images/LinkedInProfile.png";
+    // Use absolute path from the root to ensure it works from any route
+    return "/images/LinkedInProfile.png";
 }
 
 export function ProfilePic() {
-    return "./images/ProfilePicOfficial.jpg";
-} 
+    // Use absolute path from the root to ensure it works from any route
+    return "/images/ProfilePicOfficial.jpg";
+}
