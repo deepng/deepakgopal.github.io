@@ -15,12 +15,17 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // GitHub Pages configuration
-  // If repo name is username.github.io, no basePath is needed
-  basePath: isGithubActions && repoName !== 'deepakgopal.github.io' ? `/${repoName}` : '',
-  assetPrefix: isGithubActions && repoName !== 'deepakgopal.github.io' ? `/${repoName}/` : '',
-  
-  // trailingSlash: true
+  // Only apply basePath and assetPrefix when building for GitHub Pages
+  basePath: isGithubActions ? `/${repoName}` : '',
+  assetPrefix: isGithubActions ? `/${repoName}/` : '',
+
+  // Add public assets handler to ensure static assets like images work correctly
+  // This helps Next.js transform image paths properly for both local and deployed environments
+  experimental: {
+    optimizePackageImports: ['react-icons', '@heroicons/react'],
+  },
+
+  trailingSlash: true
 };
 
 export default nextConfig;
