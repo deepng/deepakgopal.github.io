@@ -79,7 +79,7 @@ export default function Page() {
             technology leadership, engineering practices, and professional growth.
           </p>
           <a
-            href="/rss.xml"
+            href={`${basePath}/rss.xml`}
             className="inline-flex items-center px-4 py-2 text-sm bg-orange-500 text-white rounded-md hover:bg-orange-600 transition-colors"
             target="_blank"
             rel="noopener noreferrer"

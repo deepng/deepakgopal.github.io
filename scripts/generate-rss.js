@@ -18,7 +18,7 @@ function generateRSSFeed() {
   <description>Thoughts, insights, and experiences from my journey in technology leadership</description>
   <language>en</language>
   <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-  <atom:link href="https://deepakgopal.github.io/rss.xml" rel="self" type="application/rss+xml" />
+  <atom:link href="https://deepng.github.io/deepakgopal.github.io/rss.xml" rel="self" type="application/rss+xml" />
   <!-- Blog posts will appear here when added -->
 </channel>
 </rss>`;

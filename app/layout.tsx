@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Deepak Gopal - Profile & Portfolio",
   description: "Professional profile and portfolio of Deepak Gopal",
   icons: {
-    icon: `/images/LinkedInProfile.png`,
+    icon: `${basePath}/images/LinkedInProfile.png`,
   },
 };
 
