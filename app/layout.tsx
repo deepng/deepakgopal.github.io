@@ -4,6 +4,9 @@ import "./globals.css";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
+// Use an absolute path that works in both environments
+const basePath = process.env.GITHUB_ACTIONS ? '/deepakgopal.github.io' : '';
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -18,7 +21,7 @@ export const metadata: Metadata = {
   title: "Deepak Gopal - Profile & Portfolio",
   description: "Professional profile and portfolio of Deepak Gopal",
   icons: {
-    icon: "/images/LinkedInProfile.png",
+    icon: `/images/LinkedInProfile.png`,
   },
 };
 
@@ -29,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/images/LinkedInProfile.png" />
+      <link rel="icon" href={`${basePath}/images/LinkedInProfile.png`} />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

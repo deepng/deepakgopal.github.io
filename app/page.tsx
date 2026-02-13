@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import LinkedInProfile from "@/components/view-source";
 
+// Use an absolute path that works in both environments
+const basePath = process.env.GITHUB_ACTIONS ? '/deepakgopal.github.io' : '';
 
 export default function Page() {
   return (
@@ -33,6 +35,7 @@ export default function Page() {
         <div className="w-48 h-48 md:w-64 md:h-64 relative rounded-full overflow-hidden border-4 border-zinc-200 dark:border-zinc-700">
           {/* Replace with your profile image */}
           <Image
+            className="hover-img"
             src={LinkedInProfile()}
             alt="Deepak Gopal"
             fill
