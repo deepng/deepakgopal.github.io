@@ -1,3 +1,5 @@
+const basePath = process.env.GITHUB_ACTIONS ? '/deepakgopal.github.io' : '';
+
 export default function Page() {
     return (
         <div className="max-w-4xl mx-auto">
@@ -34,7 +36,7 @@ export default function Page() {
                     A proper subscription system will be available once content is ready.
                 </p>
                 <a
-                    href="/rss.xml"
+                    href={`${basePath}/rss.xml`}
                     className="inline-flex items-center px-6 py-3 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"

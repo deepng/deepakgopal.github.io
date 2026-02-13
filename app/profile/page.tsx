@@ -66,11 +66,11 @@ export default function Page() {
                         <ul className="space-y-2">
                             <li className="flex items-center gap-2">
                                 <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                                <span>Java, Python, JavaScript</span>
+                                <span>Java, Python, Typescript</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                                <span>Appium, Cypress, Cucumber, Selenium</span>
+                                <span>Appium, Cypress, Cucumber, Selenium, Playwright</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="w-2 h-2 bg-green-500 rounded-full"></span>
@@ -78,11 +78,11 @@ export default function Page() {
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                                <span>MongoDB, ElasticSearch, SQL</span>
+                                <span>MongoDB, ElasticSearch, MySQL</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                                <span>AI/ML: Cursor, GitHub Co-pilot, Ollama</span>
+                                <span>AI Cients: Cursor, GitHub Co-pilot, Claude code, Roo code</span>
                             </li>
                         </ul>
                     </div>

@@ -1,4 +1,6 @@
 // RSS Link component
+const basePath = process.env.GITHUB_ACTIONS ? '/deepakgopal.github.io' : '';
+
 
 interface RSSLinkProps {
   size?: 'small' | 'medium' | 'large';
@@ -20,7 +22,7 @@ export default function RSSLink({ size = 'medium', className = '' }: RSSLinkProp
 
   return (
     <a
-      href="/rss.xml"
+      href={`${basePath}/rss.xml`}
       className={`inline-flex items-center ${sizeClasses[size]} bg-orange-500 text-white rounded-md hover:bg-orange-600 transition-colors ${className}`}
       target="_blank"
       rel="noopener noreferrer"
